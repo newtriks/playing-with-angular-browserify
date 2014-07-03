@@ -1,0 +1,16 @@
+{
+	"name": "dummy",
+	"version": "0.0.0",
+	"private": true,
+	"dependencies": {
+		"restangular": "~1.4.0"
+	},
+	"overrides": {
+		"restangular": {
+			"main": "dist/restangular.js"
+		},
+		"restangular": {
+            "dependencies": null
+        }
+	}
+}
