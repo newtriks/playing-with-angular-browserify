@@ -1,5 +1,11 @@
 'use strict';
+var mix = require('ng-mixin');
 
-module.exports = function ($scope, emceeService) {
-	$scope.emcee = emceeService.all()[0];
-};
+module.exports = mix({
+
+	$inject: ['$scope', 'emceeService'],
+
+	init: function ($scope, emceeService) {
+		$scope.emcee = emceeService.all()[0];
+	}
+});

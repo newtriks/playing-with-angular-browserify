@@ -1,5 +1,11 @@
 'use strict';
+var mix = require('ng-mixin');
 
-module.exports = function ($scope, deejayService) {
-	$scope.deejays = deejayService.all();
-};
+module.exports = mix({
+
+  $inject: ['$scope', 'deejayService'],
+
+  init: function ($scope, deejayService) {
+    $scope.deejays = deejayService.all();
+  }
+});
