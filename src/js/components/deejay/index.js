@@ -1,6 +1,7 @@
 'use strict';
 var angular = require('angular');
+var deejay = require('./deejay-directive');
+
 module.exports = angular.module('app.deejay', [])
-	.controller('DeejayCtrl', require('./deejay-controller'))
   .factory('deejayService', require('./deejay-service'))
-	.directive('deejay', require('./deejay-directive'));
+	.directive(deejay.name, deejay.component);
