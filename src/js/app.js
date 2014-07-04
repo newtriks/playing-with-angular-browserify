@@ -5,6 +5,6 @@ require('restangular');
 
 angular.module('app', [
 	'restangular',
-	require('./modules/emcee').name,
-	require('./modules/deejay').name
+	require('./components/emcee').name,
+	require('./components/deejay').name
 ]);

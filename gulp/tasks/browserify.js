@@ -19,7 +19,7 @@ gulp.task('browserify', function () {
 
   var bundler = bundleMethod({
     // Specify the entry point of your app
-    entries: ['./app/scripts/main.js']
+    entries: ['./src/js/app.js']
   });
 
   var bundle = function () {
@@ -36,7 +36,7 @@ gulp.task('browserify', function () {
       // Use vinyl-source-stream to make the
       // stream gulp compatible. Specifiy the
       // desired output filename here.
-      .pipe(source('main.js'))
+      .pipe(source('app.js'))
       // Specify the output destination
       .pipe(gulp.dest('./dist/js'))
       // Log when bundling completes!
